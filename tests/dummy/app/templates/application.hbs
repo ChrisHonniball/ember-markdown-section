@@ -52,13 +52,8 @@
 <div class="col-lg-10 col-lg-offset-1 col-md-12">
   <h2>Project Status</h2>
   <p class="lead">
-    <span class="label label-danger">Rapid Development</span>&nbsp;
-    This addon <em>will</em> change rapidly at this stage and <em>may</em> not be fully functional.
-
-    {{!
     <span class="label label-success">Stable</span>&nbsp;
     <a href="https://github.com/ChrisHonniball/ember-markdown-section/releases/latest">Stable version released</a>. All additional development will be tagged as a new release.
-    }}
   </p>
 
   <div id="examples" role="marker"></div>
@@ -69,8 +64,53 @@
 
 <div class="col-lg-10 col-lg-offset-1 col-md-12">
   <h2>Examples</h2>
-
-  Coming once the component is finalized.
+  
+  <h3>Processed Template</h3>
+  <div class="panel panel-default">
+    <div class="panel-body">
+      {{#ember-markdown-section}}
+        ---
+        
+        ### This is a test of the <code>ember-markdown-section</code> syntax
+        
+        This section was written with a combination of markdown and HTML.
+        
+        #### Supported syntax
+        
+        * All supported items from [chjj/marked](https://github.com/chjj/marked)
+        
+        > Markdown is intended to be as easy-to-read and easy-to-write as is feasible.
+        > 
+        > - *[Daring Fireball: Markdown Philosophy](http://daringfireball.net/projects/markdown/syntax#philosophy)*
+        
+        <div class="text-info">You can still include HTML in your templates.</div>
+        
+        ---
+      {{/ember-markdown-section}}
+    </div>
+  </div>
+  
+  
+  <h3>Unprocessed Template</h3>
+  {{#ember-highlight-code language="markdown"}}
+    ---
+    
+    ### This is a test of the &lt;code&gt;ember-markdown-section&lt;/code&gt; syntax
+    
+    This section was written with a combination of markdown and HTML.
+    
+    #### Supported syntax
+    
+    * All supported items from [evilstreak/markdown-js](https://github.com/evilstreak/markdown-js)
+    
+    > Markdown is intended to be as easy-to-read and easy-to-write as is feasible.
+    > 
+    > - *[Daring Fireball: Markdown Philosophy](http://daringfireball.net/projects/markdown/syntax#philosophy)*
+    
+    &lt;div class="text-info"&gt;You can still include HTML in your templates.&lt;/div&gt;
+    
+    ---
+  {{/ember-highlight-code}}
 
   <div id="options" role="marker"></div>
 </div>
