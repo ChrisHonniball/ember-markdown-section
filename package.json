@@ -1,6 +1,6 @@
 {
   "name": "ember-markdown-section",
-  "version": "0.0.2",
+  "version": "0.0.3",
   "description": "Use markdown syntax in your Ember tempaltes.",
   "directories": {
     "doc": "doc",
@@ -11,11 +11,11 @@
     "build": "ember build",
     "test": "ember try:testall"
   },
-  "repository": "",
+  "repository": "https://github.com/ChrisHonniball/ember-markdown-section",
   "engines": {
     "node": ">= 0.10.0"
   },
-  "author": "",
+  "author": "Chris Honniballj",
   "license": "MIT",
   "devDependencies": {
     "broccoli-asset-rev": "^2.0.2",
@@ -45,6 +45,7 @@
     "ember-cli-babel": "^5.0.0"
   },
   "ember-addon": {
-    "configPath": "tests/dummy/config"
+    "configPath": "tests/dummy/config",
+    "demoUrl": "https://chrishonniball.github.io/ember-markdown-section"
   }
 }
