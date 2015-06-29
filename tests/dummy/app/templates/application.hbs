@@ -1,3 +1,92 @@
-<h2 id="title">Welcome to Ember.js</h2>
+{{! markers need to be placed in sections above desired navigation section to compensate for the navbar! }}
 
-{{outlet}}
+<div id="purpose" role="marker" style="height: 70px;"></div>
+
+<nav id="nav" class="navbar navbar-inverse navbar-fixed-top">
+  <div class="container-fluid">
+    <div class="navbar-header">
+      <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#main-nav" aria-expanded="false">
+        <span class="sr-only">Toggle navigation</span>
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+      </button>
+
+      <a class="navbar-brand" href="https://github.com/ChrisHonniball/ember-markdown-section">ember-markdown-section</a>
+    </div>
+
+    <div class="collapse navbar-collapse" id="main-nav">
+      <ul class="nav navbar-nav">
+        <li><a href="#purpose">Purpose</a></li>
+        <li><a href="#installation">Installation</a></li>
+        <li><a href="#project-status">Project Status</a></li>
+        <li><a href="#examples">Examples</a></li>
+        <li><a href="#options">Options</a></li>
+      </ul>
+    </div>
+  </div>
+</nav>
+
+<div class="col-lg-10 col-lg-offset-1 col-md-12">
+  <h2>Purpose</h2>
+  <p class="lead">
+    <code>ember-markdown-section</code> allows you to use markdown syntax in your Ember templates.
+  </p>
+
+  <div id="installation" role="marker"></div>
+</div>
+
+<div class="clearfix"></div>
+<hr>
+
+<div class="col-lg-10 col-lg-offset-1 col-md-12">
+  <h2>Installation</h2>
+  <pre>ember install ember-markdown-section</pre>
+
+  <div id="project-status" role="marker"></div>
+</div>
+
+<div class="clearfix"></div>
+<hr>
+
+<div class="col-lg-10 col-lg-offset-1 col-md-12">
+  <h2>Project Status</h2>
+  <p class="lead">
+    <span class="label label-danger">Rapid Development</span>&nbsp;
+    This addon <em>will</em> change rapidly at this stage and <em>may</em> not be fully functional.
+
+    {{!
+    <span class="label label-success">Stable</span>&nbsp;
+    <a href="https://github.com/ChrisHonniball/ember-markdown-section/releases/latest">Stable version released</a>. All additional development will be tagged as a new release.
+    }}
+  </p>
+
+  <div id="examples" role="marker"></div>
+</div>
+
+<div class="clearfix"></div>
+<hr>
+
+<div class="col-lg-10 col-lg-offset-1 col-md-12">
+  <h2>Examples</h2>
+
+  Coming once the component is finalized.
+
+  <div id="options" role="marker"></div>
+</div>
+
+<div class="clearfix"></div>
+<hr>
+
+<div class="col-lg-10 col-lg-offset-1 col-md-12">
+  <h2>Options</h2>
+
+  <p><em>No options available</em></p>
+</div>
+
+<div class="clearfix"></div>
+<hr>
+
+<div class="col-xs-12 text-center lead">
+  Created by <a href="https://github.com/ChrisHonniball">@ChrisHonniball</a>
+</div>
