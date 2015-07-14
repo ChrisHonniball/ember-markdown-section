@@ -46,6 +46,6 @@
   },
   "ember-addon": {
     "configPath": "tests/dummy/config",
-    "demoUrl": "https://chrishonniball.github.io/ember-markdown-section"
+    "demoURL": "https://chrishonniball.github.io/ember-markdown-section"
   }
 }
